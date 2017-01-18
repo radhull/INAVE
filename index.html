@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <script src="./node_modules/core-js/client/shim.min.js"></script>        
+        <script src="./node_modules/systemjs/dist/system.js"></script>
+        <script src="./system.config.js"></script>
+        <script>
+            System.import("./app/main");
+        </script>
+    </head>
+    <body>
+        <h1>Hello, world!</h1>
+        <div class="container theme-showcase">
+            <div class="jumbotron">
+                <input type="text" id="caja" />
+                <button type="button" id="boton">Añadir</button>
+                <div id="saludos">Hola a todos.</div>
+            </div>
+        </div>
+    </body>
+</html>
